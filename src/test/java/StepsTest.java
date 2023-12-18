@@ -23,7 +23,7 @@ public class StepsTest {
     @Owner("mstelmakh")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("Отображение issue #84 в табе Issue в репозитории eroshenkoam/allure-example")
-    public void LamdaStepsTest () {
+    public void lamdaStepsTest () {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
         step("Открываем домашнюю страницу", () -> {
@@ -50,7 +50,7 @@ public class StepsTest {
     }
 
     @Test
-    public void AnnotationStepsTest () {
+    public void annotationStepsTest () {
         steps.openHomePage();
         steps.searchForRepository(REPOSITORY);
         steps.clickOnRepositoryLink(REPOSITORY);
